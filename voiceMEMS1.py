@@ -3,7 +3,7 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from .. import loader
 
 @loader.tds
-class voiceGirls3(loader.Module):
+class voiceMEMS1(loader.Module):
     """Мемные гс для диалогов"""
 
     strings = {"name": "voiceMEMS1"}
