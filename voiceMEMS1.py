@@ -215,3 +215,16 @@ class voiceMEMS1(loader.Module):
             reply_to=reply.id if reply else None,
         )
         return
+
+    async def хочпокcmd(self, message):
+        """| Хочешь, покажу пенис?"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/zvuki12/29",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
+        return
